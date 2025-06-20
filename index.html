@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Jardinero Táctico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>El Jardinero Táctico</h1>
+        <div class="game-info">
+            <p>Puntuación: <span id="score">0</span></p>
+            <p>Flores disponibles: <span id="flowers-left">5</span></p>
+            <button id="reset-button">Reiniciar Juego</button>
+        </div>
+        <div id="game-board" class="game-board">
+            </div>
+        <div class="flower-palette">
+            <div class="flower-item" data-flower="rose">🌹 Rosa</div>
+            <div class="flower-item" data-flower="tulip">🌷 Tulipan</div>
+            <div class="flower-item" data-flower="sunflower">🌻 Girasol</div>
+        </div>
+        <div class="game-rules">
+            <h2>Reglas:</h2>
+            <ul>
+                <li>Cada flor tiene un valor base.</li>
+                <li>Las **Rosas** (🌹) ganan +2 puntos si están junto a un **Girasol** (🌻).</li>
+                <li>Los **Tulipanes** (🌷) pierden -1 punto si están junto a un **Girasol** (🌻).</li>
+                <li>Los **Girasoles** (🌻) dan +1 punto por cada flor adyacente.</li>
+                <li>Tienes 5 flores para plantar. ¡Maximiza tu puntuación!</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
